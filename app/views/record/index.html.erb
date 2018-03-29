@@ -1,0 +1,15 @@
+<h1 class="jumbotron">Ruby Record</h1>
+<h3>Welcome to Ruby Record!</h3>
+
+<p>See below available <strong>albums</strong> we have: </p>
+<ol class="">
+    <% @albums.each do |x| %> 
+    <li>
+        <!--<strong><%= link_to(x.title, "/records/#{x.id}") %></strong>-->
+        <strong><%= link_to(x.title, records_path+"/#{x.id}") %></strong>
+    </li>
+    <!--<li>Description: <%= x.description %></li>
+    <li>Artist: <%= x.artist %></li>-->
+    
+    <% end %>
+</ul>

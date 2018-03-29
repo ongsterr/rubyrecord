@@ -1,0 +1,18 @@
+
+<h1 class="jumbotron">Ruby Record</h1>
+<p>Welcome to Ruby Record!</p>
+
+<h3>Title: </h3>
+<%= @album.title %>
+</br></br>
+<h4>Description: </h4>
+<%= @album.description %>
+</br></br>
+<h4>Artist: </h4>
+<%= @album.artist %>
+
+<br><br>
+<p>
+    <!--<a href="/records">Back to Home Page</a>-->
+    <%= link_to("Back to Home Page", records_path) %>
+</p>
